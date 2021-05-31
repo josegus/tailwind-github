@@ -80,24 +80,6 @@
           >
             <svg class="w-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
           </PageActionButton>
-
-
-          <!-- <a class="inline-flex items-center bg-transparent border border-gray-400 rounded text-xs" href="#">
-            <div class="flex px-2 py-1 border-r border-gray-400 rounded-l">
-              <svg class="w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-              <span class="ml-1">Watch</span>
-            </div>
-            <span class="px-2 py-1 bg-white rounded-r font-bold">529</span>
-          </a> -->
-
-          <!-- <a class="px-2 py-1 bg-white border border-gray-400 rounded" href="#">
-            <span class="bg-gray-200">Star</span>
-            <span class="bg-white">40.3k</span>
-          </a>
-          <a class="px-2 py-1 bg-white border border-gray-400 rounded" href="#">
-            <span class="bg-gray-200">Fork</span>
-            <span class="bg-white">1.8k</span>
-          </a> -->
         </div>
       </div>
 
@@ -135,6 +117,25 @@
           <span class="ml-2">Insights</span>
         </a>
       </div>
+    </div>
+
+    <!-- content -->
+    <div class="w-4/6 mx-auto mt-5 border">
+      <!-- branch, go to file, download code -->
+      <div class="flex justify-between">
+        <div>
+          <ButtonMain>master</ButtonMain>
+
+          <a href="#">branches</a>
+          <a href="#">tags</a>
+        </div>
+
+        <div>
+          <ButtonLink>Go to file</ButtonLink>
+          <a href="#">Add file</a>
+          <button class="bg-green-600">Code</button>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -142,9 +143,14 @@
 
 <script>
 import PageActionButton from './../components/PageActionButton';
+import ButtonMain from './../components/ButtonMain';
+import ButtonLink from './../components/ButtonLink';
+
 export default {
   components: {
     PageActionButton,
+    ButtonMain,
+    ButtonLink,
   }
 }
 </script>
